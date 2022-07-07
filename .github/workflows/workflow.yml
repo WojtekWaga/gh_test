@@ -1,0 +1,16 @@
+name: workflow1 
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  a:
+    name: Job a
+    runs-on: ubuntu-latest
+    steps:
+      - name: step 1a
+        run: |
+          echo "Step 1a"
+          env
+
